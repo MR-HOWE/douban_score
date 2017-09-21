@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "豆瓣电影评分快速查询助手",
+    "version": "1.0",
+    "description": "豆瓣电影评分快速查询助手",
+    "permissions": [
+        "contextMenus",
+        "https://api.douban.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "icons": {
+        "16": "images/douban16.png"
+    }
+}
+/*
+@author: Howe
+@email: huangzhh38@gmail.com
+*/
+
